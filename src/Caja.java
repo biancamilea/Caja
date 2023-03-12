@@ -6,6 +6,7 @@ public class Caja {
         private String etiqueta;
 
 
+
         public Caja(int ancho, int alto, int fondo, Unidad unidad) {
             this.ancho = ancho;
             this.alto = alto;
@@ -13,7 +14,27 @@ public class Caja {
             this.unidad = unidad;
         }
 
-        public double getVolumen() {
+    public int getAncho() {
+        return ancho;
+    }
+
+    public int getAlto() {
+        return alto;
+    }
+
+    public int getFondo() {
+        return fondo;
+    }
+
+    public Unidad getUnidad() {
+        return unidad;
+    }
+
+    public String getEtiqueta() {
+        return etiqueta;
+    }
+
+    public double getVolumen() {
             double volumen = ancho * alto * fondo;
             if (unidad == Unidad.CM) {
                 volumen /= 1000000.0;
