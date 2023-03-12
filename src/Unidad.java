@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public enum Unidad {
+public enum Unidad {
+    CM, M
 }
